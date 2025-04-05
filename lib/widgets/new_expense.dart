@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:expenses_app/models/expense.dart';
 
@@ -114,7 +115,7 @@ class _NewExpenseState extends State<NewExpense> {
           height: double.infinity,
           child: SingleChildScrollView(
             child: Padding(
-              padding: EdgeInsets.fromLTRB(16, 16, 16, keyboardSpace + 16),
+              padding: EdgeInsets.fromLTRB(16, 16, 16, keyboardSpace + 16).r,
               child: Column(
                 children: [
                   if (width >= 600)
@@ -130,7 +131,7 @@ class _NewExpenseState extends State<NewExpense> {
                             ),
                           ),
                         ),
-                        const SizedBox(width: 24),
+                         SizedBox(width: 24.w),
                         Expanded(
                           child: TextField(
                             keyboardType: TextInputType.number,
@@ -174,7 +175,7 @@ class _NewExpenseState extends State<NewExpense> {
                                 _selectedCategory = value;
                               });
                             }),
-                        const SizedBox(width: 24),
+                         SizedBox(width: 24.w),
                         Expanded(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
@@ -193,7 +194,7 @@ class _NewExpenseState extends State<NewExpense> {
                     )
                   else
                     Row(
-                      spacing: 11,
+                      spacing: 11.w,
                       children: [
                         Expanded(
                           child: TextField(
@@ -221,7 +222,7 @@ class _NewExpenseState extends State<NewExpense> {
                         )
                       ],
                     ),
-                  const SizedBox(height: 16),
+                   SizedBox(height: 16.h),
                   if (width >= 600)
                     Row(
                       children: [

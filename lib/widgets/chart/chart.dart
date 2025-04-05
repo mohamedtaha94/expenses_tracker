@@ -4,8 +4,6 @@ import 'package:expenses_app/widgets/chart/chart_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
-
 class Chart extends StatelessWidget {
   const Chart({super.key, required this.expenses});
 
@@ -37,13 +35,13 @@ class Chart extends StatelessWidget {
     final isDarkMode =
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     return Container(
-      margin: const EdgeInsets.all(16).r,
-      padding:const  EdgeInsets.symmetric(
-        vertical: 16,
-        horizontal: 8,
+      margin: EdgeInsets.all(16.r),
+      padding: EdgeInsets.symmetric(
+        vertical: 16.h,
+        horizontal: 8.w,
       ).r,
       width: double.infinity,
-      height: 180,
+      height: 180.h,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         gradient: LinearGradient(
@@ -70,7 +68,7 @@ class Chart extends StatelessWidget {
               ],
             ),
           ),
-           SizedBox(height: 12.h),
+          SizedBox(height: 12.h),
           Row(
             children: buckets
                 .map(

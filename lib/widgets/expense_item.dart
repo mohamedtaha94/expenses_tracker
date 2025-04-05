@@ -10,9 +10,9 @@ class ExpenseItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 20,
-            vertical: 16,
+          padding:  EdgeInsets.symmetric(
+            horizontal: 20.w,
+            vertical: 16.h,
           ).r,
           child: Column(crossAxisAlignment: CrossAxisAlignment.start,
             children: [

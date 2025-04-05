@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ChartBar extends StatelessWidget {
   const ChartBar({
@@ -14,7 +15,7 @@ class ChartBar extends StatelessWidget {
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 4),
+        padding:  EdgeInsets.symmetric(horizontal: 4.w),
         child: FractionallySizedBox(
           heightFactor: fill,
           child: DecoratedBox(
